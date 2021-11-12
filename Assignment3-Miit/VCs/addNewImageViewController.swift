@@ -12,6 +12,7 @@ protocol AddingImageProtocol {
     
     func controllerDidCancel()
 }
+
 class addNewImageViewController: UIViewController {
     
     var delegate: AddingImageProtocol?
@@ -21,6 +22,7 @@ class addNewImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Add New Image"
 
         // Do any additional setup after loading the view.
     }

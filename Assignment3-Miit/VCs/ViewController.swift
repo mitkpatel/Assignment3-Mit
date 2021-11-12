@@ -19,10 +19,11 @@ class ViewController: UIViewController,
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Image Viewer"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var aVC = segue.destination as! addNewImageViewController
+        let aVC = segue.destination as! addNewImageViewController
         aVC.delegate = self
     }
     
